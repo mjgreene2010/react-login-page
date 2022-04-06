@@ -1,3 +1,5 @@
+import "./styling/home.css";
+
 const Home = () => {
   return (
     <div>
