@@ -6,7 +6,17 @@ function App() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  return <Login />;
+  const userHandler = (name, pass) => {
+    setUsername(name);
+    setPassword(pass);
+  };
+
+  return (
+    <div>
+      {console.log(username, password)}
+      <Login loginHandler={userHandler} />
+    </div>
+  );
 }
 
 export default App;
